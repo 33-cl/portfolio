@@ -10,6 +10,17 @@ tags:
   - File parsing
   - 2D rendering
 ---
+
+<iframe 
+        width="560" 
+        height="315" 
+        src="https://youtube.com/embed/yXm4NiJPFEQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
 ## So_long : Un jeu 2D en C
 
 > <i>Jeu 2D simple conçu pour vous faire utiliser des textures, des sprites et quelques éléments basiques de gameplay.</i>

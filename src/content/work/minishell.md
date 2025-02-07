@@ -1,6 +1,6 @@
 ---
 title: Minishell
-publishDate: 2020-07-22 00:00:00
+publishDate: 2024-07-0 00:00:00
 img: /assets/minishell.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
@@ -11,12 +11,21 @@ tags:
   - Multi-threading
 ---
 
+<iframe 
+        width="560" 
+        height="315" 
+        src="https://youtube.com/embed/Nqa_MfR3yPE" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
 ## Minishell : Un shell minimaliste
 
 > <i>This project is about creating a simple shell. Yes, your own little bash.</i>
 
 Le projet <b>minishell</b> est l'un des projets les plus emblématiques de l'école 42. Il consiste à créer un interpréteur de commandes (shell) en C, capable de gérer des commandes de base, des pipes, des redirections, et bien plus encore. Le tout de façon rigoureuse avec une parfaite gestion de la mémoire. Ce projet m'a permis de plonger en profondeur dans les mécanismes des systèmes d'exploitation, tout en renforçant mes compétences en programmation système.
-
 
 ### Fonctionnalités implémentées
 
