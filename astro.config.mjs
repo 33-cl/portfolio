@@ -11,6 +11,7 @@ const locales =
 }
 
 export default defineConfig({
+    site: 'https://33-cl.github.io',
     integrations: [
       i18n({
         defaultLocale: defaultLocale,
