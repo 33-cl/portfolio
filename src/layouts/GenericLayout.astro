@@ -1,0 +1,12 @@
+---
+import { getLocale } from "astro-i18n-aut";
+
+const locale = getLocale(Astro.url);
+
+let title : string;
+switch (locale) {
+    case "fr":
+        title = "Hello, my name is Mael Ferreira";
+    default:
+        title = "Salut, je m'appelle Mael Ferreira";
+}

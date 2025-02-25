@@ -1,5 +1,89 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLocale } from "astro-i18n-aut";
+
+// Récupérer la langue actuelle
+const locale = getLocale(Astro.url);
+
+// Contenu en fonction de la langue
+let title: string;
+let description: string;
+
+switch (locale) {
+	case "fr":
+		title = "À propos de moi";
+		description = "Je suis un étudiant en informatique basé à Lyon, France.";
+		break;
+	default:
+		title = "About Me";
+		description = "I am a computer science student based in Lyon, France.";
+		break;
+}
+---
+
+<BaseLayout title={title} description={description}>
+	<div class="wrapper stack gap-8">
+		<h1>{title}</h1>
+		<p>{description}</p>
+
+		<!-- Exemple de contenu supplémentaire -->
+		<section>
+			<h2>{locale === "fr" ? "Mon parcours" : "My Journey"}</h2>
+			<p>
+				{locale === "fr"
+					? "Je suis passionné par le développement web et l'entrepreneuriat."
+					: "I am passionate about web development and entrepreneurship."}
+			</p>
+		</section>
+
+		<section>
+			<h2>{locale === "fr" ? "Compétences" : "Skills"}</h2>
+			<ul>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Astro</li>
+				<li>Node.js</li>
+			</ul>
+		</section>
+	</div>
+</BaseLayout>
+
+<style>
+	.wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		line-height: 1.6;
+		color: var(--gray-300);
+	}
+
+	ul {
+		list-style: disc;
+		padding-left: 2rem;
+		margin-top: 1rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+</style>
+
+<!-- ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
@@ -117,4 +201,4 @@ import Hero from '../components/Hero.astro';
 			font-size: var(--text-lg);
 		}
 	}
-</style>
+</style> -->
